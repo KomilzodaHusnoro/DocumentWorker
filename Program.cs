@@ -18,7 +18,7 @@ namespace Document_worker
                 Console.Write("Enter password:");
                 string inputPasswordForExpert = Console.ReadLine();
                 if (inputPasswordForExpert == passwordForExpert){
-                    Console.Write("Now you can continue or work with new ability: \n*1* --> open document\n*2* --> edit document\n*3* -->save document in a new format\nYour choise: ");
+                    Console.Write("Now you can continue or work with new ability: \n*1* --> open document\n*2* --> edit document\n*3* --> save document in a new format\nYour choise: ");
                     int choise = int.Parse(Console.ReadLine());
                     Console.Clear();
                     switch (choise)
@@ -36,9 +36,10 @@ namespace Document_worker
                             edw.SaveDocument();
                         }break;
                     }
+                } if (inputPasswordForExpert != passwordForExpert){
+                    System.Console.WriteLine("Incorrect password!");
                 }
-            }
-            if ( answer == "no"){
+            } if ( answer == "no"){
                 System.Console.WriteLine("Update your text-redactor for more abilities.");
                 Console.ReadKey();
                 Console.Clear();
@@ -48,8 +49,8 @@ namespace Document_worker
                 ProDocumentWorker pdw = new ProDocumentWorker();
                 Console.Clear();
                 Console.Write("Enter password:");
-                string inputPasswordForExpert = Console.ReadLine();
-                if (inputPasswordForExpert == passwordForPro){
+                string inputPasswordForPro = Console.ReadLine();
+                if (inputPasswordForPro == passwordForPro){
                     Console.Write("Now you can continue or work with following ability: \n*1* --> open document\n*2* --> edit document\n*3* -->anyway save document in an old format\nYour choise: ");
                     int choise = int.Parse(Console.ReadLine());
                     Console.Clear();
@@ -68,9 +69,33 @@ namespace Document_worker
                             pdw.SaveDocument();
                         }break;
                     }
-                } 
+                } if (inputPasswordForPro != passwordForPro){
+                    System.Console.WriteLine("Incorrect password!");
+                }
+            } if (answer2 == "no"){
+                DocumentWorker dw = new DocumentWorker();
+                System.Console.WriteLine("Update your text editor for more abilities.");
+                Console.ReadKey();
+                Console.Clear();
+                System.Console.Write("Now you can continue or work with following ability: \n*1* --> open document\n*2* --> see ability\n*3* -->see ability\nYour choise:");             
+                int choise3 = int.Parse(Console.ReadLine());
+                Console.Clear();
+                switch (choise3)
+                {
+                    case 1:
+                    {
+                        dw.OpenDocument();
+                    }break;
+                    case 2:
+                    {
+                        dw.EditDocument();
+                    }break;
+                    case 3:
+                    {
+                    dw.SaveDocument();
+                    }break;
+                }
             }
-
         }
     }
 }
