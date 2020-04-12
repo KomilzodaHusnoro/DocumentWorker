@@ -15,6 +15,7 @@ namespace Document_worker
             if (answer == "yes"){
                 ExpertDocumentWorker edw = new ExpertDocumentWorker();
                 Console.Clear();
+                IncorrectPasswordPro:
                 Console.Write("Enter password:");
                 string inputPasswordForExpert = Console.ReadLine();
                 if (inputPasswordForExpert == passwordForExpert){
@@ -37,10 +38,11 @@ namespace Document_worker
                         }break;
                     }
                 } if (inputPasswordForExpert != passwordForExpert){
-                    System.Console.WriteLine("Incorrect password!");
+                    System.Console.WriteLine("Incorrect password!\n Try again");
+                    goto IncorrectPasswordPro;
                 }
             } if ( answer == "no"){
-                System.Console.WriteLine("Update your text-redactor for more abilities.");
+                System.Console.WriteLine("Update your text editor for more abilities.");
                 Console.ReadKey();
                 Console.Clear();
                 System.Console.Write("Did you get the Pro version?");
@@ -48,6 +50,7 @@ namespace Document_worker
                 if (answer2 == "yes"){
                 ProDocumentWorker pdw = new ProDocumentWorker();
                 Console.Clear();
+                passwordError:
                 Console.Write("Enter password:");
                 string inputPasswordForPro = Console.ReadLine();
                 if (inputPasswordForPro == passwordForPro){
@@ -70,14 +73,15 @@ namespace Document_worker
                         }break;
                     }
                 } if (inputPasswordForPro != passwordForPro){
-                    System.Console.WriteLine("Incorrect password!");
+                    System.Console.WriteLine("Incorrect password!\n Try again");
+                    goto passwordError;
                 }
             } if (answer2 == "no"){
                 DocumentWorker dw = new DocumentWorker();
-                System.Console.WriteLine("Update your text editor for more abilities.");
+                System.Console.WriteLine("Update your text editor for more abilities. You can use free version.");
                 Console.ReadKey();
                 Console.Clear();
-                System.Console.Write("Now you can continue or work with following ability: \n*1* --> open document\n*2* --> see ability\n*3* -->see ability\nYour choise:");             
+                System.Console.Write("Now you can continue or work with following ability: \n*1* --> open document\n*2* --> see ability\n*3* -->see ability\nYour choise: ");             
                 int choise3 = int.Parse(Console.ReadLine());
                 Console.Clear();
                 switch (choise3)
