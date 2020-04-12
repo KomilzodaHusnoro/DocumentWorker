@@ -40,11 +40,41 @@ namespace Document_worker
             }
             if ( answer == "no"){
                 System.Console.WriteLine("Update your text-redactor for more abilities.");
-
-
+                Console.ReadKey();
+                Console.Clear();
+                System.Console.Write("Did you get the Pro version?");
+                string answer2 = Console.ReadLine().ToLower();
+                if (answer2 == "yes"){
+                ProDocumentWorker pdw = new ProDocumentWorker();
+                Console.Clear();
+                Console.Write("Enter password:");
+                string inputPasswordForExpert = Console.ReadLine();
+                if (inputPasswordForExpert == passwordForPro){
+                    Console.Write("Now you can continue or work with following ability: \n*1* --> open document\n*2* --> edit document\n*3* -->anyway save document in an old format\nYour choise: ");
+                    int choise = int.Parse(Console.ReadLine());
+                    Console.Clear();
+                    switch (choise)
+                    {
+                        case 1:
+                        {
+                            pdw.OpenDocument();
+                        }break;
+                        case 2:
+                        {
+                            pdw.EditDocument();
+                        }break;
+                        case 3:
+                        {
+                            pdw.SaveDocument();
+                        }break;
+                    }
+                } 
             }
+
         }
     }
+}
+
     class DocumentWorker
     {
         public virtual void OpenDocument()
