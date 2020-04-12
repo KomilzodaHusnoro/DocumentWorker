@@ -1,0 +1,13 @@
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\bin\Debug\netcoreapp3.1\Document=worker.exe
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\bin\Debug\netcoreapp3.1\Document=worker.deps.json
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\bin\Debug\netcoreapp3.1\Document=worker.runtimeconfig.json
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\bin\Debug\netcoreapp3.1\Document=worker.runtimeconfig.dev.json
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\bin\Debug\netcoreapp3.1\Document=worker.dll
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\bin\Debug\netcoreapp3.1\Document=worker.pdb
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\obj\Debug\netcoreapp3.1\Document=worker.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\obj\Debug\netcoreapp3.1\Document=worker.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\obj\Debug\netcoreapp3.1\Document=worker.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\obj\Debug\netcoreapp3.1\Document=worker.AssemblyInfo.cs
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\obj\Debug\netcoreapp3.1\Document=worker.dll
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\obj\Debug\netcoreapp3.1\Document=worker.pdb
+C:\Users\HP\Desktop\projects\new lessons\0904\Document=worker\obj\Debug\netcoreapp3.1\Document=worker.genruntimeconfig.cache
